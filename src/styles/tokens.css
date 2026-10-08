@@ -1,0 +1,33 @@
+/*
+ * The Bridge Burger — tokens.
+ * Base preto/branco do logo; o calor vem das fotos da casa: o brioche dourado sob a luz
+ * pendente (primary), a tábua de madeira avermelhada (secondary) e o ketchup da casa (accent).
+ * Valores em "R G B" para permitir opacidade no Tailwind (rgb(var(--x) / .5)).
+ */
+:root {
+  --bg: 14 11 9;            /* #0E0B09 carvão do balcão */
+  --surface: 24 19 16;      /* #181310 */
+  --surface-2: 34 27 22;    /* #221B16 */
+  --primary: 243 165 58;    /* #F3A53A brioche / luz âmbar */
+  --primary-ink: 26 16 6;   /* #1A1006 texto sobre primary (contraste 9.8:1) */
+  --secondary: 181 83 47;   /* #B5532F tábua de madeira */
+  --accent: 229 83 61;      /* #E5533D ketchup da casa: só selos de promoção */
+  --text: 246 240 231;      /* #F6F0E7 contraste 16.9:1 sobre bg */
+  --muted: 167 157 145;     /* #A79D91 contraste 7.4:1 sobre bg */
+  --line: 246 240 231;      /* use com opacidade: border-line/10 */
+
+  --color-bg: rgb(var(--bg));
+  --color-surface: rgb(var(--surface));
+  --color-primary: rgb(var(--primary));
+  --color-secondary: rgb(var(--secondary));
+  --color-text: rgb(var(--text));
+  --color-muted: rgb(var(--muted));
+  --color-accent: rgb(var(--accent));
+
+  --radius-sm: 6px;
+  --radius-md: 14px;
+  --radius-lg: 28px;
+  --header-h: 68px;
+  --dock-h: 76px;
+  --ease-out: cubic-bezier(.16, 1, .3, 1);
+}
